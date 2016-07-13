@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/btn_yzms"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="+86"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            app:met_floatingLabel="normal"
+            app:met_helperText="11位数字"
+            app:met_maxCharacters="11"
+            app:met_baseColor="#007688"
+            app:met_primaryColor="#2196F3"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="#33ff0000"
+            app:met_errorColor="#ddaa00"
+            app:met_helperTextColor="#795548"
+            app:met_underlineColor="#003587"
+            app:met_floatingLabelTextColor="#8805ad"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_yzm"
+        android:layout_width="80dp"
+            android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:background="@color/white"
+            android:text="获取验证码"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            app:met_floatingLabel="normal"
+            app:met_helperText="由字母，数字组成 6-18位"
+            app:met_maxCharacters="18"
+            app:met_baseColor="#007688"
+            app:met_primaryColor="#2196F3"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="#33ff0000"
+            app:met_errorColor="#ddaa00"
+            app:met_helperTextColor="#795548"
+            app:met_underlineColor="#003587"
+            app:met_floatingLabelTextColor="#8805ad"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_select"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="完成注册"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
